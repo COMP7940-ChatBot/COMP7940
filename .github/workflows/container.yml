@@ -11,11 +11,12 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
     - name: Build and push to Docker Hub
       uses: docker/build-push-action@v2
       with:
         context: .
         push: true
-        tags: comp7940chatbot/chatbotrepo:latest, comp7940chatbot/chatbotrepo:${{ github.run_number }}
+        tags: shingho31/chatbotrepo:latest, shingho31/chatbotrepo:${{ github.run_number }}
         
