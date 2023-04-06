@@ -18,5 +18,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: shingho31/chatbotrepo:latest, shingho31/chatbotrepo:${{ github.run_number }}
+        tags: comp7940chatbot/chatbotrepo:latest, comp7940chatbot/chatbotrepo:${{ github.run_number }}
         
