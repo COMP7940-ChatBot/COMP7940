@@ -1,4 +1,9 @@
 on: push
+
+env:
+  AZURE_WEBAPP_NAME: comp7940chatbot   # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+
 jobs:
   build-container:
     name: Build container
