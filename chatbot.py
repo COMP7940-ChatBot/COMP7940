@@ -80,10 +80,10 @@ def greeting_command(update: Update, context: CallbackContext) -> None:
     try:
         update.message.reply_text('Good Day, ' + context.args[0] + '!')
     except (IndexError, ValueError):
-        update.message.reply_text('Usage: /hello <keyword>')
+        update.message.reply_text('Usage: /hello !!!! <keyword>')
 
 def help_command(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text('Helping you helping you.')
+    update.message.reply_text('Helping you helping you.OKOK')
 
 def add(update: Update, context: CallbackContext) -> None:
     """Send a message when the command /add is issued."""
