@@ -31,7 +31,7 @@ jobs:
     needs: build-container
 
     environment:
-      name: 'production'
+      name: 'staging'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
